@@ -1,4 +1,4 @@
-# 💻 Mon site personnel - opgi
+# 💻 Mon site personnel - BEHILIL MOHAMED SALAH
 
 Bienvenue sur mon site statique personnalisé, déployé avec GitHub Pages.  
 Je suis développeur passionné par Rust, la programmation système, les interfaces graphiques et l'infrastructure IT.
@@ -32,4 +32,4 @@ Accès ici : `https://behililmoh.github.io/BEHILIL-MOHAMED-SALAH/`
 ## 🧠 Auteur
 
 **opgi** – passionné de code, curieux et méthodique.  
-👉 [Mon GitHub](https://github.com/opgi)
+👉 [Mon GitHub](https://github.com/behililmoh)
