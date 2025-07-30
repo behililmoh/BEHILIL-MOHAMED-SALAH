@@ -1,18 +1,74 @@
+<!DOCTYPE html>
 <link rel="stylesheet" href="style.css">
-<h1>Sandbox Rust</h1>
- <nav>
-  <a href="index.html">🏠 Accueil</a>
-  <a href="about.html">👤 À propos</a>
-  <a href="projects.html">📁 Projets</a>
-  <a href="blog.html">🧠 Blog</a>
-  <a href="lab.html">🧪 Rust Lab</a>
-  <a href="contact.html">📬 Contact</a>
-</nav>
-<pre>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rust Sandbox</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.13/mode/rust/rust.min.js"></script>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    h1 {
+      color: #d84a05;
+    }
+    #editor {
+      height: 300px;
+    }
+    #output {
+      background: #272822;
+      color: #f8f8f2;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      white-space: pre-wrap;
+    }
+    button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #d84a05;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a83804;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🦀 Rust Sandbox</h1>
+  <p>Écris ton code Rust ci-dessous :</p>
+
+  <textarea id="editor">// Exemple : addition
 fn main() {
-  let mut compteur = 0;
-  println!("Valeur actuelle: {}", compteur);
-  compteur += 1;
-}
-</pre>
-<p>Ce petit exemple montre l’usage de <code>mut</code> en Rust pour modifier une variable.</p>
+    let a = 5;
+    let b = 7;
+    println!("Résultat: {}", a + b);
+}</textarea>
+
+  <button onclick="afficherCode()">📤 Afficher le code</button>
+
+  <div id="output"></div>
+
+  <script>
+    const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
+      lineNumbers: true,
+      mode: "rust",
+      theme: "default"
+    });
+
+    function afficherCode() {
+      const code = editor.getValue();
+      document.getElementById("output").textContent = code;
+    }
+  </script>
+
+</body>
+</html>
