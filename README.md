@@ -31,5 +31,5 @@ Accès ici : `https://behililmoh.github.io/BEHILIL-MOHAMED-SALAH/`
 
 ## 🧠 Auteur
 
-**opgi** – passionné de code, curieux et méthodique.  
+**B M S ©** – passionné de code, curieux et méthodique.  
 👉 [Mon GitHub](https://github.com/behililmoh)
